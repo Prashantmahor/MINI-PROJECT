@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="prjt.css">
+    <script src="https://kit.fontawesome.com/d5679de596.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="name.png" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, i am <span>Prashant mahor</span><br> from India</h1>
+            </div>
+        </div>
+        </header>
+        <!--ABOUT-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <!--IMAGE--> <img id="newme" src="newme.jpg">
+                    </div>
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About me</h1>
+                        <p>A passionate B.Tech (Hons.) Cybersecurity student with a keen eye for design and a talent for
+                            crafting responsive, user-friendly frontend web interfaces. Blending technical expertise in
+                            cybersecurity with creative frontend development skills, I aim to build secure and visually
+                            compelling digital experiences.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active" onclick="opentab('skills',event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('project',event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span>Development</span><br>Frontend Development</li>
+                                <li> <span>Security</span><br>Certified Ethical hacker</li>
+                                <li> <span>Other</span><br>C++ , Java , C </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="project">
+                            <ul>
+                                <li> <span>Furniture-Site</span><br><a href="https://prashantmahor.github.io/furniture-site/">Click Here..</a> </li>
+                                <li> <span>Codies-Hub</span><br><a href="">Click Here..</a></li>
+                                <li> <span>Portfolio</span><br><a>Click Here..</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>Degree</span><br>B-Tech Cyber Security (Hons.)</li>
+                                <li> <span>Certificate</span><br>Ethical Hacking by NPTEL</li>
+                                <li><span>vhjvhv</span><br>Modern-shoots</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="furniture.png">
+                        <div class="layer">
+                            <h3>Luxora</h3>
+                            <p>Design That Define Luxury</p>
+                            <a href="https://prashantmahor.github.io/furniture-site/"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Codieshub.png">
+                        <div class="layer">
+                            <h3>Codies-Hub</h3>
+                            <p>Learn With Ease</p>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Portfolio.png">
+                        <div class="layer">
+                            <h3>shoppingapp</h3>
+                            <p>descriptiion</p>
+                            <a href="#"></a>
+                        </div>
+
+                    </div>
+                    <a href="#" class="btn"> See more..</a>
+                </div>
+            </div>
+
+            <div id="service">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="service-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Design</h2><br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, nobis sequi? Libero
+                                soluta
+                                assumenda pellendus, cum!</p><br>
+                            <a href="#">Learn more..</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-icons"></i>
+                            <h2>IMG Editing</h2><br>
+                            <p> ipsum dolor sit amet consectetur adipisicing elit. Rerum, nobis sequi? Libero soluta
+                                assumenda pellendus, cum!</p>
+                            <a href="#">Learn more..</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-camera"></i>
+                            <h2>Photography</h2><br>
+                            <p> ipsum dolor sit amet consectetur adipisicing elit. Rerum, nobis sequi? Libero soluta
+                                assumenda pellendus, cum!</p>
+                            <a href="#">Learn more..</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact me</h1>
+                            <p><i class="fas-fa-paper-plane"></i>prashantmahour101@gmail.com</p>
+                            <P><i class="fas-fa-phone-square-alt"></i>6398783975</P>
+                            <div class="social-icons">
+                                <a href="https://youtube.com/@Bro-Code-vs5cw?si=fthO-jTzQE0htM5j"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a href="https://instagram.com/ll_mr.prashant_ll?igshid=OGQ5ZDc2ODk2ZA=="><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/Prashantmahor"><i class="fa-brands fa-github"></i></a>
+                                <a
+                                    href="https://www.linkedin.com/in/prashant-mahor-a58159250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app7i"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                            <a href="Prashant's Resume.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="name" placeholder="your name " required>
+                                <input type="email" name="email" placeholder="your Email " required>
+                                <textarea name="msg" rows="6" placeholder="your msg"></textarea>
+                                <button type="submit" class="btn">submit</button>
+                            </form>
+                            <!-- <span id="msg">hello</span> -->
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="copyright">
+                    <p>Copyright P.K. made with efforts<i class="fas fa-heart"></i></p>
+                </div>
+            </div>
+
+            <script>
+               
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname, event) {
+                    event.preventDefault(); // Prevents default action (if any).
+
+                    // Remove 'active-link' class from all tab links
+                    for (let tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+
+                    // Remove 'active-tab' class from all tab contents
+                    for (let tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+
+                    // Add 'active-link' class to the clicked tab
+                    event.currentTarget.classList.add("active-link");
+
+                    // Add 'active-tab' class to the corresponding tab content
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+
+
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwDrcXeemZr-ANQor8YhDo2LpDNbH9wMcYPa3Iu9T0PaTqj2HThADZO_qUGmJld12Wytw/exec'
+                const form = document.forms['submit-to-google-sheet']
+
+                const msg = document.getElementById("msg")
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message sent succesfully"
+                            setTimeout(function () {
+                                msg.innerHTML = ""
+                            }), 5000)
+                    form.reset()
+                })
+                    .catch(error => console.error('Error!', error.message))
+
+            </script>
+</body>
+
+</html>

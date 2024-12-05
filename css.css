@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    }
+.nav-bar{
+   height:80px;
+   width:1560px;
+   background-color:rgb(0, 11, 107);
+   display:flex;
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+}
+.clg-logo {
+font-size:30px;
+width:60px;
+}
+.panel{
+
+height:150px;
+display:flex;
+
+.name{
+text-align: center;
+}
+.text{
+left-margin:50px;
+}
+.hero-sec {
+height:20px;
+width:40px;
+background-image: C:\Users\prash\OneDrive\Documents\WhatsApp Image 2023-11-04 at 08.55.47_2acc26fa.jpg;
+}
+
+.btn{
+   height:50px;
+   width:60px;
+
+}

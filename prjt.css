@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"poppins", sans-serif;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#080808;
+    color:white;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(myphoto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding:10px 10% ;
+    margin-bottom: 150px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.logo{
+
+    height:60px;
+    margin: 10px -100px;
+    width: 237px;
+
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:10px;
+}
+nav ul li a{
+color:white;
+text-decoration: none;
+font-size:18px;
+position:relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#ff004f;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+        margin:20% -7%;
+        font-size:30px;
+    }
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+}
+.header-text h1 span{
+color:#ff004f;
+}
+<!--ABOUT-->
+
+#about{
+    padding:80px 0;
+    color:#ababab;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+}
+.about-col-1{
+flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    border-radius: 15px;
+}
+.sub-title{
+    font-size:60px;
+    font-weight: 600;
+    color:azure;
+}
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight:500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.tab-contents ul li a{
+   color: white;
+   font-size: small;
+   font-weight: 400;
+   text-decoration: none;
+}
+.tab-contents ul li span{
+color: #b54769;
+font-size: 18px;
+font-weight: 400;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#service{
+    padding:30px 0;
+    
+}
+.service-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px ;
+    margin-top:50px;
+    
+}
+.service-list div{
+    background:#262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 30px;
+    margin: -30px 0 0 -30px;
+}
+.service-list div p{
+    margin: 25px 0px 0 20px ;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight:300;
+    margin: -30px 11px;
+}
+.service-list div a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 12px;
+    margin: 0px 0px -2px 115px;
+    display: inline-block;
+}
+.service-list div:hover{
+    background:#ff004f;
+    transform:translateY(-10px);
+
+}
+#portfolio{
+    padding: 50px 0;
+    
+}
+.work-list{   
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px ;
+    margin-top:50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    height: 150px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    
+
+}
+.layer{
+width: 100%;
+height: 0%;
+background: linear-gradient(rgbaa(0,0,0,0.6), #ff004f);
+border-radius:10px ;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction:column;
+padding:0 40px;
+text-align: center;
+font-size: 14px;
+transform: height 0.5s;
+transition:height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom:20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+
+    line-height: 60px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover.layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #d91e1e;
+    border-radius:6px;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    background-color: #080808;
+    font-size:18px;
+}
+.btn:hover{
+    background:#ff004f;
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+
+    font-size:25px ;
+}
+.social-icons{
+    margin-top:30px;
+}
+.social-icons a{
+    text-decoration:none ;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn btn2{
+    display: inline-block;
+    background:#ff004f ;
+}
+.contact-right form{
+width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.copyright i{
+    color: #b54769;
+}
+#msg{
+    color: #61b753;
+    margin-top: -40px;
+    display: block;
+}
+
+/* Base styles for all tab links */
+.tab-links {
+    display: inline-block; /* Arrange tabs horizontally */
+    padding: 5px 12px; /* Add spacing */
+    margin-right: 5px; /* Space between tabs */
+    text-decoration: none; /* Remove underlines */
+    font-size: 16px; /* Set font size */
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Default background */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 21px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for tab links */
+.tab-links:hover {
+    background-color: #e0e0e0; /* Slightly darker background */
+    color: #000; /* Darker text */
+    cursor: pointer; /* Show pointer cursor */
+}
+
+/* Active tab link */
+.tab-links.active-link {
+    background-color: #007BFF; /* Highlighted background */
+    color: white; /* White text */
+    border-color: #0056b3; /* Darker border for contrast */
+}
+
+/* Add spacing to the tabs container */
+.tabs {
+    margin-bottom: 20px;
+}

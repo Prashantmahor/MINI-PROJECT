@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="image"><img style="height:150px ; width: 70%;margin-left:-67px ;" src="loginlogo.jpg"></div>;
+    <div class="box">
+
+
+        <h1>login</h1>
+        <div class="box2">
+
+            <form action="">
+                <input type="text" placeholder="username" required id="user">
+                <i class="fa-solid fa-user-secret"></i>
+        </div>
+        <div class="box2">
+
+            <input type="password" placeholder="password" required id="pas">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="rem-forgot">
+            <label><input type="checkbox" id="check"> remember me</label>
+            <a href="#"><br><br>forget password</a>
+        </div><br>
+        <input type="button" class="btn" value="login" onclick="fun()" />
+        <div class="registor-link">
+            <p>Don't have an account<a href="#"><br><br>register</a></p>
+        </div>
+        </form>
+    </div>
+    <script>
+        function func() {
+            var email = document.getElementById("user").value;
+            var pass = document.getElementById("pas").value;
+            if (email == 'prashantkumar' && pass == '12345') {
+                alert("sucessfull");
+                window.location.assign("./mini.htm");
+            }
+            else {
+                alert("Invalid !!");
+                return;
+            }
+        }  
+    </script>
+</body>
+
+</html>

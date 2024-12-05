@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popup Login Form</title>
+	<style>
+		/* Popup container */
+		.popup {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		/* The actual popup */
+		.popup .popup-content {
+			display: none;
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 0;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			border-radius: 5px;
+		}
+
+		/* Popup arrow */
+		.popup .popup-content::after {
+			content: "";
+			position: absolute;
+			top: -5px;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent transparent #f1f1f1 transparent;
+		}
+
+		/* Show the popup when hovering over the container */
+		.popup:hover .popup-content {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Popup Login Form</h2>
+
+	<!-- Popup container -->
+	<div class="popup">
+		Login
+		<!-- The actual popup content -->
+		<div class="popup-content">
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username"><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
+```
+
+This code creates a popup login form that appears when the user hovers over the "Login" button. You can customize the look and feel of the popup by modifying the CSS styles.
+
+If you want to create a popup login form that appears when the user clicks on a button, you can modify the JavaScript code accordingly. Here is an example of how to do this ¹:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popup Login Form</title>
+	<style>
+		/* Popup container */
+		.popup {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		/* The actual popup */
+		.popup .popup-content {
+			display: none;
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 0;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			border-radius: 5px;
+		}
+
+		/* Popup arrow */
+		.popup .popup-content::after {
+			content: "";
+			position: absolute;
+			top: -5px;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent transparent #f1f1f1 transparent;
+		}
+
+		/* Show the popup when clicking on the container */
+		.popup.clicked .popup-content {
+			display: block;
+		}
+	</style>
+	<script>
+		// Add a click event listener to the popup container
+		document.querySelector('.popup').addEventListener('click', function() {
+			// Toggle the "clicked" class on the popup container
+			this.classList.toggle('clicked');
+		});
+	</script>
+</head>
+<body>
+
+	<h2>Popup Login Form</h2>
+
+	<!-- Popup container -->
+	<div class="popup">
+		Login
+		<!-- The actual popup content -->
+		<div class="popup-content">
+			<form>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username"><br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password"><br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
+```
+

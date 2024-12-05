@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+		// Add a click event listener to the popup container
+		document.querySelector('.popup').addEventListener('click', function() {
+			// Toggle the "clicked" class on the popup container
+			this.classList.toggle('clicked');
+		});
+	</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ffc300;
+            color: black;
+        }
+        body::-webkit-scrollbar{
+        display: none;
+}
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        nav {
+            width: 122%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 0px 16px 30px rgba(0, 0, 0, 0.3);
+            margin-left: -130px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            background-color:rgba(0, 0, 0, 0.75);
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 195, .9);
+            height: 100%;
+            border-radius: 10px;
+            width: 100%;
+            font-weight: 700;
+            transition: .3s;
+            color: black;
+            padding: 15px 10px;
+        }
+
+        .logo {
+            height: 65px;
+            width: 173px;
+        }
+
+        .header-text {
+            margin-left:5%;
+            font-size: 30px;
+        }
+
+        .header-text p {
+            margin-top: -50px;
+            margin-left: 3%;
+        }
+
+        .header-text h1 {
+            font-size: 60px;
+        }
+
+        .header-text h1 span {
+            color: #ff004f;
+        }
+
+        .man-logo {
+            height: 10%;
+            width: 20%;
+            margin: 5% 0 50px -5%;
+        }
+
+        .btn {
+            display: inline-block;
+            width: fit-content;
+            border: 2px solid black;
+            border-radius: 6px;
+            padding: 4px 20px;
+            margin: 30px -5% 0 55% ;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(9, 111, 228);
+            transition: background 0.5s;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+
+        .btn btn2 {
+            display: inline-block;
+            background: white;
+        }
+
+        .center {
+            height: 700px;
+            width: 800px;
+        }
+
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .popup {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+           
+		}
+
+		/* The actual popup */
+        .popup .popup-content {
+			display: none;
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 0;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			border-radius: 5px;
+		}
+
+		/* Popup arrow */
+        .popup .popup-content::after {
+                content: "";
+                position: absolute;
+                top: -500px;
+                left: 500px;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent #f1f1f1 transparent;
+  
+        }
+		/* Show the popup when clicking on the container */
+		.popup.clicked .popup-content {
+			display: block;
+            height:350px;
+         
+		}
+        .box2{
+            height:300px ;
+            width: 70px;
+        }
+  
+  /*    button    */
+   .popup .popup-content{
+    width:350px;
+    background-color: #fff;
+    color:black;
+    content: "";
+    position: absolute;
+    top: -400px;
+    left: 500px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #f1f1f1 transparent;
+
+  
+}
+.popup-content h1 {
+    font-size:40px;
+    text-align: center;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    
+}
+.popup-content .box2{
+    position:relative;
+    width:100%;
+    height:50px;
+    background:#fff;
+    margin:10px 0;
+}
+.box2 input {
+    width:75%;
+   height:15px;
+    border:none;
+    outline:none;
+    border-radius: 40px;
+    font-size:16px ;
+    color:BLACK;
+    padding: 20px 45px 20px 20px;
+    margin-left: 32px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);   
+}
+.box2 input:hover{
+    border: 2px black solid;
+
+}
+.box2 input::placeholder{
+    color:black;
+}
+.popup-content .rem-me{
+    display:block;
+   
+    font-size: 14.5px;
+ }
+ .rem-me{
+align-items: center;
+        accent-color: black;
+      
+    }
+    .rem-me label{
+        font-size:15px;
+        margin-left: 100px;
+    }
+    
+.popup-content .btn{
+    width:140px;
+    height:45px;
+    font-size:16px;
+    background-color: rgb(9, 111, 228);
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    color:white;
+    font-weight: 600;
+     margin-left: 30%;
+     margin-top:15px;
+}
+.btn:hover{
+border: 2px  solid black ;
+color:black;
+background: white;
+}
+.btn:active{
+    background-color:#fff;
+    color:blue;
+}
+.popup-content .registor-link {
+    font-size:14.5px;
+    text-align: center;
+    margin-top:65px;
+    
+   
+}
+.size{
+font-size: 15px;
+}
+.forget{
+    font-size: 12px;
+    margin-left:120px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="codieslogo.png" class="logo">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">Clients</a></li>
+                    <li><a href="#service">Testimonials</a></li>
+                    <li><a href="Developers.htm">Developers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="content">
+                <img src="harry2.png" class="man-logo">
+                
+                    </div>
+                </div> 
+            </div>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hey Coders, we are <span>Prashant's</span><br> from India.</h1>
+                <div class="popup">
+                    <a href="#" class="btn btn2" onclick="document.querySelector('.popup').classList.toggle('clicked')">Login</a>
+                    <!-- The actual popup content -->
+                    <div class="popup-content">
+                       
+                           
+                                <h1>login</h1>
+                                <form>
+                                <div class="box2">  
+                                  <input type="text" placeholder="username" required id="user">
+                                  <i class="fa-solid size fa-user-secret"></i>
+                                       </div>
+                                       <div class="box2">
+                                   
+                                        <input type="password" placeholder="password"required id="pas"> 
+                                        <i class="fa-solid size fa-lock"></i>
+                                            </div>
+                                            <div class="rem-me">
+                                                <label><input type="checkbox"> remember me </label>
+                                                </div>
+                                            </form>
+                                           <input type="button" class="btn" value="login" onclick="func()"/>
+                                           <br>
+                                           <a class="forget" href="#">forget password<i class="fa-solid fa-question"></i></a><br><hr>
+                                           <div class="registor-link">
+                            <p >Don't have an account<a href="#">register</a></p></div>
+                        </div>    
+                        
+                        </div><br>
+                           </div>
+                            </div>
+                            <script>
+                                function func(){
+                                var email = document.getElementById("user").value;
+                                var pass = document.getElementById("pas").value;
+                                if (email== 'prashant' && pass == '12345'){
+                                    window.location.assign("./mini.htm");
+                                }
+                                else{
+                                    alert("Invalid !!");
+                                    return;
+                                }
+                            }
+                            </script>
+                        
+                    </div>
+        <script>
+
+            // let slideIndex = 0;
+            // const slides = document.querySelectorAll('.slides img');
+            // const slideCount = slides.length;
+
+            // function showSlides() {
+            //     slides.forEach(slide => {
+            //         slide.style.display = 'none';
+            //     });
+            //     slideIndex++;
+            //     if (slideIndex > slideCount) {
+            //         slideIndex = 1;
+            //     }
+            //     slides[slideIndex - 1].style.display = 'block';
+            //     setTimeout(showSlides, 1500); // Change slide every 3 seconds (3000 milliseconds)
+            // }
+
+            // showSlides(); // Start the slider
+
+        </script>
+</body>
+
+</html>

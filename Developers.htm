@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services Section with HTML and CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>body{
+        font-family: sans-serif;
+        background-image: linear-gradient(to right, #8B8ABB, #8AC59D);
+      }
+      img{
+        width: 300px;
+        height: 300px;
+      }
+      .container{
+        display: grid;
+      
+      }
+      .container__box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+        gap: 100px;
+       
+
+      }
+      .container .container__box .box{
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 5px 5px 6px #333;
+        text-align: center;
+        padding: 20px 30px;
+        height:600px;
+         
+      }
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        transition: .2s, linear;
+      }
+      .container__heading{
+        text-align: center;
+        padding-bottom: 15px;
+        color: #e3e3e3;
+        text-shadow: 0 0 10px black;
+        font-size: 50px;
+        font-weight: 600;
+      }
+      .container .container__box .box h3{
+        color: #444;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .container .container__box .box p{
+        font-size: 14px;
+        font-weight: 150;
+        color: #555;
+      }
+      .container .container__box .box a{
+        border-radius: 4px;
+        background:#444;
+        color: white;
+        margin-bottom:-200px;
+        
+      }
+      .container .container__box .box a:hover{
+        background: #908080;
+      }</style>
+<body>
+    <div class="container">
+        <h1 class="container__heading">Developers</h1>
+        <div class="container__box">
+           <!-- prashant mahour section -->
+            <div class="box">
+                <img src="prashantm.jpg" alt="">
+                <br><br><h3>Meet Prashant mahor<br> Passionate Web Designer</h3>
+                <p>Hello everyone! My name is Prashant mahor, and I’m thrilled to share my journey as a dedicated web designer. </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+           <!--prashant kumar section -->
+            <div class="box">
+                <img src="pkay.jpg" alt="">
+                <br><br><h3>Meet Prashant kumar <br>Passionate Web Designer</h3>
+                <p>Hello everyone! My name is prashant kumar, and I’m thrilled to share my journey as a dedicated web designer.</p>
+                <a href="styleshhet.html" class="btn">Read More</a>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
